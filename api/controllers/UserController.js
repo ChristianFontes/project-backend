@@ -8,16 +8,16 @@ module.exports = {
             password = req.body.password;
 
         if (!(email && password)) {
-            return res.badRequest({ responseMsg: 'Email and password fields are required' });
+            return res.badRequest({ responseMsg: 'email_and_password_required' });
         }
         User.findOne({ email: email }).exec(function (err, user) {
             if (err) return res.serverError(err);
             if (!user) {
-                return res.badRequest({ responseMsg: 'User not found' });
+                return res.badRequest({ responseMsg: 'user_not_found' });
             }
             User.comparePassword(password, user, function (err, valid) {
                 if (err) return res.serverError(err);
-                if (!valid) return res.badRequest({ responseMsg: 'Email and password don\'t match' });
+                if (!valid) return res.badRequest({ responseMsg: 'email_and_password_dont_match' });
                 else
                     return res.ok({
                         user: user,
