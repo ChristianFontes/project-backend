@@ -1,0 +1,307 @@
+{
+  "data": {
+    "actions": [],
+    "project": [
+      {
+        "name": "TEGScrum-fe",
+        "createdAt": "2016-03-19T19:17:32.318Z",
+        "updatedAt": "2016-03-19T19:17:32.325Z",
+        "id": 1
+      },
+      {
+        "name": "TEGScrum-fe",
+        "createdAt": "2016-03-19T19:20:39.065Z",
+        "updatedAt": "2016-03-19T19:20:39.069Z",
+        "id": 2
+      }
+    ],
+    "sprints": [],
+    "task": [],
+    "user": [
+      {
+        "username": "christianf",
+        "email": "christianfontes82@gmail.com",
+        "password": "$2a$10$og4wgIlNlZt24jx7CFvOW.l7bFgy734Yw6LF9keuTutKJ0NXe0nwm",
+        "avatar": "Daniel",
+        "createdAt": "2016-03-19T19:17:17.207Z",
+        "updatedAt": "2016-03-19T19:17:17.207Z",
+        "id": 1
+      },
+      {
+        "username": "dummie",
+        "email": "dummie@gmail.com",
+        "password": "$2a$10$IvPFpl815Ex9Qwr/gPrnE.GLpouPyOYYDuwprx3L66HxgWbBJNK0.",
+        "avatar": "Daniel",
+        "createdAt": "2016-03-19T19:17:17.218Z",
+        "updatedAt": "2016-03-19T19:17:17.218Z",
+        "id": 2
+      },
+      {
+        "username": "danort",
+        "email": "d.ortiz.lira@gmail.com",
+        "password": "$2a$10$oRcC/nPLPHWEhm/9rffp8OjwayThf3mgC52UqtYEnnNL6JTXqL6q2",
+        "avatar": "Daniel",
+        "createdAt": "2016-03-19T19:17:17.226Z",
+        "updatedAt": "2016-03-19T19:17:17.226Z",
+        "id": 3
+      }
+    ],
+    "userproject": [
+      {
+        "project": null,
+        "member": 1,
+        "rol": "rol",
+        "createdAt": "2016-03-19T19:20:08.623Z",
+        "updatedAt": "2016-03-19T19:20:08.623Z",
+        "id": 1
+      },
+      {
+        "project": 1,
+        "member": 1,
+        "rol": "rol",
+        "createdAt": "2016-03-19T19:20:28.687Z",
+        "updatedAt": "2016-03-19T19:20:28.687Z",
+        "id": 2
+      }
+    ],
+    "user_story": []
+  },
+  "schema": {
+    "actions": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "Blocked",
+          "Incorporated",
+          "In Progress",
+          "Ready for Test",
+          "Rejected",
+          "Accepted"
+        ]
+      },
+      "user": {
+        "type": "json"
+      },
+      "message": {
+        "type": "text"
+      },
+      "task_id": {
+        "type": "integer",
+        "model": "task",
+        "foreignKey": true,
+        "alias": "task_id"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "project": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "sprints": {
+      "nombre": {
+        "type": "string"
+      },
+      "inicio": {
+        "type": "date"
+      },
+      "fin": {
+        "type": "date"
+      },
+      "project_id": {
+        "type": "integer",
+        "model": "project",
+        "foreignKey": true,
+        "alias": "project_id"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "task": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "text"
+      },
+      "value": {
+        "type": "integer"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "Feature",
+          "Bug",
+          "Chore"
+        ]
+      },
+      "project_name": {
+        "type": "integer",
+        "model": "project",
+        "foreignKey": true,
+        "alias": "project_name"
+      },
+      "user_story_id": {
+        "type": "integer",
+        "model": "user_story",
+        "foreignKey": true,
+        "alias": "user_story_id"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "userproject": {
+      "project": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "project"
+      },
+      "member": {
+        "type": "integer",
+        "model": "project",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "rol": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user_story": {
+      "nombre": {
+        "type": "string"
+      },
+      "descripcion": {
+        "type": "text"
+      },
+      "estado": {
+        "type": "string"
+      },
+      "prioridad": {
+        "type": "integer"
+      },
+      "sprint_nombre": {
+        "type": "integer",
+        "model": "sprints",
+        "foreignKey": true,
+        "alias": "sprint_nombre"
+      },
+      "project_id": {
+        "type": "integer",
+        "model": "project",
+        "foreignKey": true,
+        "alias": "project_id"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "actions": {},
+    "project": {
+      "id": 2
+    },
+    "sprints": {},
+    "task": {},
+    "user": {
+      "id": 3
+    },
+    "userproject": {
+      "id": 2
+    },
+    "user_story": {}
+  }
+}
