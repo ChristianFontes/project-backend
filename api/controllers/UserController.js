@@ -4,20 +4,20 @@ module.exports = {
 
     login: function (req, res) {
 
-        var email = req.body.email,
+        var userName = req.body.userName,
             password = req.body.password;
 
-        if (!(email && password)) {
-            return res.badRequest({ responseMsg: 'email_and_password_required' });
+        if (!(userName && password)) {
+            return res.badRequest({ error: 'Nombre de Usuario y Contraseña son requeridas' });
         }
-        User.findOne({ email: email }).exec(function (err, user) {
+        User.findOne({ userName: userName }).exec(function (err, user) {
             if (err) return res.serverError(err);
             if (!user) {
-                return res.badRequest({ responseMsg: 'user_not_found' });
+                return res.badRequest({ error: 'Nombre de usuario no encontrado' });
             }
             User.comparePassword(password, user, function (err, valid) {
                 if (err) return res.serverError(err);
-                if (!valid) return res.badRequest({ responseMsg: 'email_and_password_dont_match' });
+                if (!valid) return res.badRequest({ error: 'Nombre de usuario y Contraseña no coinciden' });
                 else
                     return res.ok({
                         user: user,
@@ -38,5 +38,57 @@ module.exports = {
                 res.json(200, { user: user, token: jwToken.issue({ id: user.id }) });
             }
         })
-    }
+    },
+
+    update: function (req, res) {
+
+        var userObj = req.allParams();
+
+        if (!req.body.password || userObj.password == '') {
+          delete userObj.password;
+          //userObj['password'] = user.password;
+          User.update(userObj.id, userObj).exec(function afterwards(err, updated){
+            if (err) {
+              return res.json(400, { err: err });
+            }
+            if (updated) {
+                res.json(200, { user: updated});
+            }
+          });
+        }else {
+          User.update(userObj.id, userObj).exec(function afterwards(err, updated){
+            if (err) {
+              return res.json(400, { err: err });
+            }
+            if (updated) {
+                res.json(200, { user: updated});
+            }
+          });
+        }
+
+    },
 };
+
+/*
+,
+
+update: function(req, res) {
+
+  var userObj = req.allParams();
+  delete userObj.password;
+
+  console.log(userObj);
+
+  User.update(userObj, function (err, user) {
+    console.log(user);
+      if (err) {
+          return res.json(400, { err: err });
+      }
+      if (user) {
+          console.log(user);
+          res.json(200, { user: user, token: jwToken.issue({ id: user.id }) });
+      }
+  })
+
+}
+*/
