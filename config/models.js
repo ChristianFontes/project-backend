@@ -1,14 +1,3 @@
-/**
- * Default model configuration
- * (sails.config.models)
- *
- * Unless you override them, the following properties will be included
- * in each of your models.
- *
- * For more info on Sails models, see:
- * http://sailsjs.org/#!/documentation/concepts/ORM
- */
-
 module.exports.models = {
 
   /***************************************************************************
@@ -17,7 +6,15 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
+
+
+  
+
   connection: 'localDiskDb',
+  // Si se usa SQL Server cambiar localDiskDb por sqlserver
+
+
+
 
   /***************************************************************************
   *                                                                          *
@@ -28,7 +25,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   migrate: 'safe',
-  
+
   seed: function (callback) {
     var self = this;
     var modelName = self.adapter.identity.charAt(0).toUpperCase() + self.adapter.identity.slice(1);

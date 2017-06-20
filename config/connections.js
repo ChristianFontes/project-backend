@@ -33,6 +33,14 @@ module.exports.connections = {
     filePath: 'DB/'
   },
 
+  sqlserver: {
+    adapter: 'sails-sqlserver', //No modificar esta linea
+    user: 'cnect',
+    password: 'pass',
+    host: 'abc123.database.windows.net', // azure database
+    database: 'mydb'
+  },
+
   /***************************************************************************
   *                                                                          *
   * MySQL is the world's most popular relational database.                   *

@@ -3,46 +3,103 @@ var bcrypt = require('bcrypt');
 module.exports = {
 
   attributes: {
-  	username:{
+  	name:{
       type: 'string',
-      required: 'true',
-      unique: true    
+      required: true
+    },
+    lastName:{
+      type: 'string',
+      required: true
+    },
+    userName: {
+      type: 'string',
+      required: true,
+      unique: true
     },
     email: {
   	  type: 'email',
-      required: 'true',
+      required: true,
       unique: true
   	},
   	password: {
       type: 'string',
-      required: 'true'
+      required: true
     },
   	avatar: {
       type: 'string'
     },
-    projects: {
-      collection: 'project',
+    typeMember: {
+      type: 'string',
+      required: true
+    },
+    departament: {
+      collection: 'departament', //project
       via: 'member',
-      through: 'userproject',
+      through: 'userdepartament', //userproject
       dominant: true
+    },
+    sede: {
+      collection: 'sede', //project
+      via: 'member',
+      through: 'usersede', //userproject
+      dominant: true
+    },
+    tickets: {
+      collection: 'Ticket',
+      via: 'user', //project
+      through: 'ticketuser' //userproject
+    },
+    products: {
+      collection: 'Product',
+      via: 'user', //project
+      through: 'productuser' //userproject
+    },
+    inventories: {
+      collection: 'Inventory',
+      via: 'user', //project
+      through: 'inventoryuser' //userproject
+    },
+    incidences: {
+      collection: 'Incidence',
+      via: 'user', //project
+      through: 'incidenceuser' //userproject
     },
     toJSON: function () {
       var obj = this.toObject();
-      delete obj.password;
+
       return obj;
+    }
+  },
+
+  beforeUpdate: function(values, next) {
+    if (values.password && values.password.substring(0,7) !== '$2a$10$') {
+      bcrypt.genSalt(10, function (err, salt) {
+        if(err) return next(err);
+        bcrypt.hash(values.password, salt, function (err, hash) {
+          if(err) return next(err);
+          values.password = hash;
+          next();
+        })
+      })
+    }else {
+      next();
     }
   },
 
   // Encriptar Password antes de Guardar en la BD.
   beforeCreate : function (values, next) {
-    bcrypt.genSalt(10, function (err, salt) {
-      if(err) return next(err);
-      bcrypt.hash(values.password, salt, function (err, hash) {
+    if (values.password && values.password.substring(0,7) !== '$2a$10$') {
+      bcrypt.genSalt(10, function (err, salt) {
         if(err) return next(err);
-        values.password = hash;
-        next();
+        bcrypt.hash(values.password, salt, function (err, hash) {
+          if(err) return next(err);
+          values.password = hash;
+          next();
+        })
       })
-    })
+    }else {
+      next();
+    }
   },
 
   comparePassword: function (password, user, cb) {
@@ -57,22 +114,31 @@ module.exports = {
   },
   seedData:[
       {
-        username: 'danort',
+        name: 'Daniel',
+        lastName: 'Ortiz',
+        userName: 'DanielOrtiz',
         email:'d.ortiz.lira@gmail.com',
         password:'qqqqqq',
-        avatar: 'Daniel'
+        avatar: 'Daniel',
+        typeMember: 'Gestor'
       },
       {
-        username: 'christianf',
+        name: 'Christian',
+        lastName: 'Fontes',
+        userName: 'ChristianFontes82',
         email:'christianfontes82@gmail.com',
         password:'qqqqqq',
-        avatar: 'Daniel'
+        avatar: 'Daniel',
+        typeMember: 'Gestor'
       },
       {
-        username: 'dummie',
-        email:'dummie@gmail.com',
+        name: 'Maria Elizabeth',
+        lastName: 'Taylor',
+        userName: 'Maria85',
+        email:'mariaejemplo85@gmail.com',
         password:'qqqqqq',
-        avatar: 'Daniel'
-      }
+        avatar: 'Daniel',
+        typeMember: 'Empleado'
+      },
     ]
 };

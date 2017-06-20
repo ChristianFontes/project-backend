@@ -14,7 +14,14 @@ module.exports.bootstrap = function(cb) {
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
   async.series([
-    User.seed
+    User.seed,
+    Departament.seed,
+    Sede.seed,
+    Ticket.seed,
+    Provider.seed,
+    Product.seed,
+    Inventory.seed,
+    Incidence.seed
     //Project.seed
   ],cb);
 };
