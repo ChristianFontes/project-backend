@@ -138,7 +138,7 @@ module.exports = {
         email:'mariaejemplo85@gmail.com',
         password:'qqqqqq',
         avatar: 'Daniel',
-        typeMember: 'Empleado'
+        typeMember: 'Gestor'
       },
     ]
 };

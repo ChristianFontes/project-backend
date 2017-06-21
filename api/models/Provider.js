@@ -20,13 +20,22 @@ module.exports = {
   },
   seedData:[
     {
-      name: 'American Provider'
+      name: 'J&A System C.A'
     },
     {
-      name: 'HelpDesk C.A'
+      name: 'Gold Data C.A'
     },
     {
-      name: 'Security Software'
+      name: 'Caracas Red C.A'
+    },
+    {
+      name: 'Caracas Hosting C.A'
+    },
+    {
+      name: 'Herman Soluciones C.A'
+    },
+    {
+      name: '3D Online Soluciones C.A'
     }
   ]
 };

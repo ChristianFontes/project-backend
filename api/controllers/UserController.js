@@ -3,10 +3,8 @@ var bcrypt = require('bcrypt');
 module.exports = {
 
     login: function (req, res) {
-
         var userName = req.body.userName,
             password = req.body.password;
-
         if (!(userName && password)) {
             return res.badRequest({ error: 'Nombre de Usuario y Contraseña son requeridas' });
         }
@@ -41,9 +39,7 @@ module.exports = {
     },
 
     update: function (req, res) {
-
         var userObj = req.allParams();
-
         if (!req.body.password || userObj.password == '') {
           delete userObj.password;
           //userObj['password'] = user.password;
@@ -65,30 +61,5 @@ module.exports = {
             }
           });
         }
-
     },
 };
-
-/*
-,
-
-update: function(req, res) {
-
-  var userObj = req.allParams();
-  delete userObj.password;
-
-  console.log(userObj);
-
-  User.update(userObj, function (err, user) {
-    console.log(user);
-      if (err) {
-          return res.json(400, { err: err });
-      }
-      if (user) {
-          console.log(user);
-          res.json(200, { user: user, token: jwToken.issue({ id: user.id }) });
-      }
-  })
-
-}
-*/

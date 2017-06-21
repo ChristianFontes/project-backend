@@ -27,8 +27,8 @@ module.exports = {
   },
   seedData:[
     {
-      status: 'comentario del gestor',
-      user: 1,
+      status: 'Pantalla rota',
+      user: 2,
       inventory: 1
     }
   ]

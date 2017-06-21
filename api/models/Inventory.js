@@ -43,7 +43,7 @@ module.exports = {
   seedData:[
       {
         observations: 'Varios products',
-        user: [3],
+        user: [2],
         sede: [3],
         products: [1],
         quantity: 60

@@ -23,7 +23,7 @@
     "include-all": "~0.1.6",
     "jsonwebtoken": "^5.7.0",
     "rc": "1.0.1",
-    "sails": "~0.12.1",
+    "sails": "^0.12.13",
     "sails-disk": "~0.10.9",
     "sails-hook-autoreload": "^0.13.1",
     "sails-sqlserver": "^0.10.8"

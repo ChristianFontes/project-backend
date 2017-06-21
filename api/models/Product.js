@@ -44,28 +44,28 @@ module.exports = {
   },
   seedData:[
     {
-      name: 'Producto 1',
+      name: 'Laptop HP',
       serial: 852963,
-      model: 'Modelo 1',
-      brand: 'Ethereum',
-      user: 1,
+      model: 'HP 15',
+      brand: 'HP',
+      user: 2,
       provider: 3
     },
     {
-      name: 'Producto 2',
-      serial: 852985,
-      model: 'Modelo 2',
-      brand: 'BTC',
-      user: 3,
+      name: 'Pantalla Samsung',
+      serial: 962925,
+      model: 'SyncMaster 732n',
+      brand: 'Samsung',
+      user: 2,
       provider: 1
     },
     {
-      name: 'Producto 3',
-      serial: 852920,
-      user: 3,
-      model: 'Modelo 3',
-      brand: 'Ethereum Classic',
-      provider: 2
+      name: 'Desktop Dell',
+      serial: 105937,
+      model: 'Dell 358n',
+      brand: 'Dell',
+      user: 2,
+      provider: 1
     }
   ]
 };
