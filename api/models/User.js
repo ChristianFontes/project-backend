@@ -66,52 +66,52 @@ module.exports = {
     },
     toJSON: function () {
       var obj = this.toObject();
-
+      delete obj.password;
       return obj;
     }
   },
 
-  beforeUpdate: function(values, next) {
-    if (values.password && values.password.substring(0,7) !== '$2a$10$') {
-      bcrypt.genSalt(10, function (err, salt) {
-        if(err) return next(err);
-        bcrypt.hash(values.password, salt, function (err, hash) {
-          if(err) return next(err);
-          values.password = hash;
-          next();
-        })
-      })
-    }else {
-      next();
-    }
-  },
-
-  // Encriptar Password antes de Guardar en la BD.
-  beforeCreate : function (values, next) {
-    if (values.password && values.password.substring(0,7) !== '$2a$10$') {
-      bcrypt.genSalt(10, function (err, salt) {
-        if(err) return next(err);
-        bcrypt.hash(values.password, salt, function (err, hash) {
-          if(err) return next(err);
-          values.password = hash;
-          next();
-        })
-      })
-    }else {
-      next();
-    }
-  },
-
-  comparePassword: function (password, user, cb) {
-    bcrypt.compare(password, user.password, function (err, match) {
-      if (err) cb(err);
-      if (match) {
-          cb(null, true);
-      } else {
-          cb(err);
-      }
-    })
-  },
+  // beforeUpdate: function(values, next) {
+  //   if (values.password && values.password.substring(0,7) !== '$2a$10$') {
+  //     bcrypt.genSalt(10, function (err, salt) {
+  //       if(err) return next(err);
+  //       bcrypt.hash(values.password, salt, function (err, hash) {
+  //         if(err) return next(err);
+  //         values.password = hash;
+  //         next();
+  //       })
+  //     })
+  //   }else {
+  //     next();
+  //   }
+  // },
+  //
+  // // Encriptar Password antes de Guardar en la BD.
+  // beforeCreate : function (values, next) {
+  //   if (values.password && values.password.substring(0,7) !== '$2a$10$') {
+  //     bcrypt.genSalt(10, function (err, salt) {
+  //       if(err) return next(err);
+  //       bcrypt.hash(values.password, salt, function (err, hash) {
+  //         if(err) return next(err);
+  //         values.password = hash;
+  //         next();
+  //       })
+  //     })
+  //   }else {
+  //     next();
+  //   }
+  // },
+  //
+  // comparePassword: function (password, user, cb) {
+  //   bcrypt.compare(password, user.password, function (err, match) {
+  //     if (err) cb(err);
+  //     if (match) {
+  //         cb(null, true);
+  //     } else {
+  //         cb(err);
+  //     }
+  //   })
+  // },
   seedData:[
       {
         name: 'Daniel',
@@ -140,5 +140,14 @@ module.exports = {
         avatar: 'Daniel',
         typeMember: 'Gestor'
       },
+      {
+        name: 'Manuel',
+        lastName: 'Rodriguez',
+        userName: 'manuelrodri85',
+        email:'manuelrodri85@gmail.com',
+        password:'qqqqqq',
+        avatar: 'Daniel',
+        typeMember: 'Empleado'
+      }
     ]
 };

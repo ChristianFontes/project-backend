@@ -13,16 +13,24 @@ module.exports = {
             if (!user) {
                 return res.badRequest({ error: 'Nombre de usuario no encontrado' });
             }
-            User.comparePassword(password, user, function (err, valid) {
-                if (err) return res.serverError(err);
-                if (!valid) return res.badRequest({ error: 'Nombre de usuario y Contraseña no coinciden' });
-                else
-                    return res.ok({
-                        user: user,
-                        token: jwToken.issue({ id: user.id })
-                    });
-
-            });
+            if (user.password == password) {
+              return res.ok({
+                  user: user,
+                  token: jwToken.issue({ id: user.id })
+              });
+            }else {
+              res.badRequest({ error: 'Nombre de usuario y Contraseña no coinciden' });
+            }
+            // User.comparePassword(password, user, function (err, valid) {
+            //     if (err) return res.serverError(err);
+            //     if (!valid) return res.badRequest({ error: 'Nombre de usuario y Contraseña no coinciden' });
+            //     else
+            //         return res.ok({
+            //             user: user,
+            //             token: jwToken.issue({ id: user.id })
+            //         });
+            //
+            // });
         });
     },
 
