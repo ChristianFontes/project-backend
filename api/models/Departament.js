@@ -21,18 +21,19 @@ module.exports = {
   seedData:[
     {
       name: 'Sistemas',
-      members: [2]
-    },
-    {
-      name: 'Administracion',
-      members: [3]
-    },
-    {
-      name: 'Desarrollo',
       members: [1]
     },
     {
-      name: 'Finanzas'
+      name: 'Administracion',
+      members: [2]
+    },
+    {
+      name: 'Desarrollo',
+      members: [3]
+    },
+    {
+      name: 'Finanzas',
+      members: [4]
     },
     {
       name: 'Compras'

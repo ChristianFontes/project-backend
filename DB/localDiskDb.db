@@ -1,0 +1,735 @@
+{
+  "data": {
+    "departament": [
+      {
+        "name": "Sistemas",
+        "createdAt": "2017-06-25T19:32:11.023Z",
+        "updatedAt": "2017-06-25T19:32:11.095Z",
+        "id": 1
+      },
+      {
+        "name": "Administracion",
+        "createdAt": "2017-06-25T19:32:11.029Z",
+        "updatedAt": "2017-06-25T19:32:11.106Z",
+        "id": 2
+      },
+      {
+        "name": "Desarrollo",
+        "createdAt": "2017-06-25T19:32:11.032Z",
+        "updatedAt": "2017-06-25T19:32:11.112Z",
+        "id": 3
+      },
+      {
+        "name": "Finanzas",
+        "createdAt": "2017-06-25T19:32:11.036Z",
+        "updatedAt": "2017-06-25T19:32:11.117Z",
+        "id": 4
+      },
+      {
+        "name": "Compras",
+        "createdAt": "2017-06-25T19:32:11.039Z",
+        "updatedAt": "2017-06-25T19:32:11.039Z",
+        "id": 5
+      },
+      {
+        "name": "Contraloria",
+        "createdAt": "2017-06-25T19:32:11.045Z",
+        "updatedAt": "2017-06-25T19:32:11.045Z",
+        "id": 6
+      },
+      {
+        "name": "Marketing",
+        "createdAt": "2017-06-25T19:32:11.048Z",
+        "updatedAt": "2017-06-25T19:32:11.048Z",
+        "id": 7
+      },
+      {
+        "name": "Diseño",
+        "createdAt": "2017-06-25T19:32:11.052Z",
+        "updatedAt": "2017-06-25T19:32:11.052Z",
+        "id": 8
+      },
+      {
+        "name": "Producción",
+        "createdAt": "2017-06-25T19:32:11.061Z",
+        "updatedAt": "2017-06-25T19:32:11.061Z",
+        "id": 9
+      },
+      {
+        "name": "Operaciones",
+        "createdAt": "2017-06-25T19:32:11.064Z",
+        "updatedAt": "2017-06-25T19:32:11.064Z",
+        "id": 10
+      },
+      {
+        "name": "Gestion Humana",
+        "createdAt": "2017-06-25T19:32:11.072Z",
+        "updatedAt": "2017-06-25T19:32:11.072Z",
+        "id": 11
+      },
+      {
+        "name": "Gerencia",
+        "createdAt": "2017-06-25T19:32:11.077Z",
+        "updatedAt": "2017-06-25T19:32:11.077Z",
+        "id": 12
+      },
+      {
+        "name": "Presidencia",
+        "createdAt": "2017-06-25T19:32:11.084Z",
+        "updatedAt": "2017-06-25T19:32:11.084Z",
+        "id": 13
+      }
+    ],
+    "incidence": [],
+    "incidenceinventory": [],
+    "incidenceuser": [],
+    "inventory": [],
+    "inventoryproduct": [],
+    "inventorysede": [],
+    "inventoryuser": [],
+    "product": [],
+    "productprovider": [],
+    "productuser": [],
+    "provider": [
+      {
+        "name": "J&A System C.A",
+        "createdAt": "2017-06-25T19:32:11.297Z",
+        "updatedAt": "2017-06-25T19:32:11.297Z",
+        "id": 1
+      },
+      {
+        "name": "Gold Data C.A",
+        "createdAt": "2017-06-25T19:32:11.303Z",
+        "updatedAt": "2017-06-25T19:32:11.303Z",
+        "id": 2
+      },
+      {
+        "name": "Caracas Red C.A",
+        "createdAt": "2017-06-25T19:32:11.306Z",
+        "updatedAt": "2017-06-25T19:32:11.306Z",
+        "id": 3
+      },
+      {
+        "name": "Caracas Hosting C.A",
+        "createdAt": "2017-06-25T19:32:11.310Z",
+        "updatedAt": "2017-06-25T19:32:11.310Z",
+        "id": 4
+      },
+      {
+        "name": "Herman Soluciones C.A",
+        "createdAt": "2017-06-25T19:32:11.313Z",
+        "updatedAt": "2017-06-25T19:32:11.313Z",
+        "id": 5
+      },
+      {
+        "name": "3D Online Soluciones C.A",
+        "createdAt": "2017-06-25T19:32:11.315Z",
+        "updatedAt": "2017-06-25T19:32:11.315Z",
+        "id": 6
+      }
+    ],
+    "sede": [
+      {
+        "name": "Caracas",
+        "createdAt": "2017-06-25T19:32:11.241Z",
+        "updatedAt": "2017-06-25T19:32:11.256Z",
+        "id": 1
+      },
+      {
+        "name": "Paraparal",
+        "createdAt": "2017-06-25T19:32:11.243Z",
+        "updatedAt": "2017-06-25T19:32:11.258Z",
+        "id": 2
+      },
+      {
+        "name": "Apamates Nepe",
+        "createdAt": "2017-06-25T19:32:11.246Z",
+        "updatedAt": "2017-06-25T19:32:11.261Z",
+        "id": 3
+      },
+      {
+        "name": "Capuchino",
+        "createdAt": "2017-06-25T19:32:11.248Z",
+        "updatedAt": "2017-06-25T19:32:11.264Z",
+        "id": 4
+      }
+    ],
+    "ticket": [],
+    "ticketuser": [],
+    "user": [
+      {
+        "name": "Daniel",
+        "lastName": "Ortiz",
+        "userName": "DanielOrtiz",
+        "email": "d.ortiz.lira@gmail.com",
+        "password": "qqqqqq",
+        "avatar": "Daniel",
+        "typeMember": "Gestor",
+        "createdAt": "2017-06-25T19:32:10.951Z",
+        "updatedAt": "2017-06-25T19:32:10.951Z",
+        "id": 1
+      },
+      {
+        "name": "Christian",
+        "lastName": "Fontes",
+        "userName": "ChristianFontes82",
+        "email": "christianfontes82@gmail.com",
+        "password": "qqqqqq",
+        "avatar": "Daniel",
+        "typeMember": "Gestor",
+        "createdAt": "2017-06-25T19:32:10.957Z",
+        "updatedAt": "2017-06-25T19:32:10.957Z",
+        "id": 2
+      },
+      {
+        "name": "Maria Elizabeth",
+        "lastName": "Taylor",
+        "userName": "Maria85",
+        "email": "mariaejemplo85@gmail.com",
+        "password": "qqqqqq",
+        "avatar": "Daniel",
+        "typeMember": "Gestor",
+        "createdAt": "2017-06-25T19:32:10.960Z",
+        "updatedAt": "2017-06-25T19:32:10.960Z",
+        "id": 3
+      },
+      {
+        "name": "Manuel",
+        "lastName": "Rodriguez",
+        "userName": "manuelrodri85",
+        "email": "manuelrodri85@gmail.com",
+        "password": "qqqqqq",
+        "avatar": "Daniel",
+        "typeMember": "Empleado",
+        "createdAt": "2017-06-25T19:32:10.962Z",
+        "updatedAt": "2017-06-25T19:32:10.962Z",
+        "id": 4
+      }
+    ],
+    "userdepartament": [
+      {
+        "employee": 1,
+        "member": 1,
+        "createdAt": "2017-06-25T19:32:11.135Z",
+        "updatedAt": "2017-06-25T19:32:11.135Z",
+        "id": 1
+      },
+      {
+        "employee": 2,
+        "member": 2,
+        "createdAt": "2017-06-25T19:32:11.163Z",
+        "updatedAt": "2017-06-25T19:32:11.163Z",
+        "id": 2
+      },
+      {
+        "employee": 3,
+        "member": 3,
+        "createdAt": "2017-06-25T19:32:11.176Z",
+        "updatedAt": "2017-06-25T19:32:11.176Z",
+        "id": 3
+      },
+      {
+        "employee": 4,
+        "member": 4,
+        "createdAt": "2017-06-25T19:32:11.181Z",
+        "updatedAt": "2017-06-25T19:32:11.181Z",
+        "id": 4
+      }
+    ],
+    "usersede": [
+      {
+        "employee": 1,
+        "member": 1,
+        "createdAt": "2017-06-25T19:32:11.273Z",
+        "updatedAt": "2017-06-25T19:32:11.273Z",
+        "id": 1
+      },
+      {
+        "employee": 2,
+        "member": 2,
+        "createdAt": "2017-06-25T19:32:11.275Z",
+        "updatedAt": "2017-06-25T19:32:11.275Z",
+        "id": 2
+      },
+      {
+        "employee": 3,
+        "member": 3,
+        "createdAt": "2017-06-25T19:32:11.279Z",
+        "updatedAt": "2017-06-25T19:32:11.279Z",
+        "id": 3
+      },
+      {
+        "employee": 4,
+        "member": 4,
+        "createdAt": "2017-06-25T19:32:11.281Z",
+        "updatedAt": "2017-06-25T19:32:11.281Z",
+        "id": 4
+      }
+    ]
+  },
+  "schema": {
+    "departament": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "incidence": {
+      "status": {
+        "type": "text"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "incidenceinventory": {
+      "employee": {
+        "type": "integer",
+        "model": "incidence",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "inventory",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "incidenceuser": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "incidence",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "inventory": {
+      "observations": {
+        "type": "text"
+      },
+      "quantity": {
+        "type": "text"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "inventoryproduct": {
+      "employee": {
+        "type": "integer",
+        "model": "inventory",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "product",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "inventorysede": {
+      "employee": {
+        "type": "integer",
+        "model": "inventory",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "sede",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "inventoryuser": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "inventory",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "product": {
+      "serial": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      },
+      "brand": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "productprovider": {
+      "employee": {
+        "type": "integer",
+        "model": "provider",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "product",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "productuser": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "product",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "provider": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "sede": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "ticket": {
+      "title": {
+        "type": "string"
+      },
+      "content": {
+        "type": "text"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "ticketuser": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "ticket",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "lastName": {
+        "type": "string"
+      },
+      "userName": {
+        "type": "string",
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "typeMember": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "userdepartament": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "departament",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "usersede": {
+      "employee": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "employee"
+      },
+      "member": {
+        "type": "integer",
+        "model": "sede",
+        "foreignKey": true,
+        "alias": "member"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "departament": {
+      "id": 13
+    },
+    "incidence": {},
+    "incidenceinventory": {},
+    "incidenceuser": {},
+    "inventory": {},
+    "inventoryproduct": {},
+    "inventorysede": {},
+    "inventoryuser": {},
+    "product": {},
+    "productprovider": {},
+    "productuser": {},
+    "provider": {
+      "id": 6
+    },
+    "sede": {
+      "id": 4
+    },
+    "ticket": {},
+    "ticketuser": {},
+    "user": {
+      "id": 4
+    },
+    "userdepartament": {
+      "id": 4
+    },
+    "usersede": {
+      "id": 4
+    }
+  }
+}

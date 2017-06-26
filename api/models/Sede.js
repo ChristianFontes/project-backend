@@ -37,7 +37,8 @@ module.exports = {
       members: [3]
     },
     {
-      name: 'Capuchino'
+      name: 'Capuchino',
+      members: [4]
     }
   ]
 };

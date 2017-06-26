@@ -120,7 +120,7 @@ module.exports = {
         email:'d.ortiz.lira@gmail.com',
         password:'qqqqqq',
         avatar: 'Daniel',
-        typeMember: 'Gestor'
+        typeMember: 'Gestor',
       },
       {
         name: 'Christian',

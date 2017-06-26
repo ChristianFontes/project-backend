@@ -26,10 +26,6 @@ module.exports = {
     }
   },
   seedData:[
-    {
-      status: 'Pantalla rota',
-      user: 2,
-      inventory: 1
-    }
+    
   ]
 };

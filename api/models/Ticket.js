@@ -28,30 +28,6 @@ module.exports = {
       next();
   },
   seedData:[
-      {
-        title: 'First Ticket',
-        content: 'This is content first ticket',
-        user: [1]
-      },
-      {
-        title: 'First Ticket 2',
-        content: 'This is content first ticket 2',
-        user: [2]
-      },
-      {
-        title: 'First Ticket 3',
-        content: 'This is content first ticket',
-        user: [3]
-      },
-      {
-        title: 'First Ticket 4',
-        content: 'This is content first ticket',
-        user: [1]
-      },
-      {
-        title: 'First Ticket 5',
-        content: 'This is content first ticket',
-        user: [2]
-      }
+      
     ]
 };
