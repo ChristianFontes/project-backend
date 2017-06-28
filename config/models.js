@@ -8,9 +8,10 @@ module.exports.models = {
   ***************************************************************************/
 
 
-  
 
-  connection: 'localDiskDb',
+
+  //connection: 'localDiskDb',
+  connection: 'mysqlServer',
   // Si se usa SQL Server cambiar localDiskDb por sqlserver
 
 
@@ -24,7 +25,7 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  migrate: 'safe',
+  migrate: 'alter',
 
   seed: function (callback) {
     var self = this;

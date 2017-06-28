@@ -6,6 +6,14 @@
  */
 
 module.exports = {
-	
+	sum: function (req, res) {
+		Sede.find()
+    .exec(function (err, sedes) {
+        if (err){
+					return res.badRequest({ error: 'Error en la consulta' });
+				}else{
+					return res.json(sedes);
+				}
+    });
+	}
 };
-

@@ -80,16 +80,112 @@
         "id": 13
       }
     ],
-    "incidence": [],
-    "incidenceinventory": [],
-    "incidenceuser": [],
+    "incidence": [
+      {
+        "status": "656565",
+        "createdAt": "2017-06-28T01:58:20.028Z",
+        "updatedAt": "2017-06-28T01:58:20.034Z",
+        "id": 1
+      }
+    ],
+    "incidenceinventory": [
+      {
+        "member": 1,
+        "employee": 1,
+        "createdAt": "2017-06-28T01:58:20.042Z",
+        "updatedAt": "2017-06-28T01:58:20.042Z",
+        "id": 1
+      }
+    ],
+    "incidenceuser": [
+      {
+        "employee": 2,
+        "member": 1,
+        "createdAt": "2017-06-28T01:58:20.050Z",
+        "updatedAt": "2017-06-28T01:58:20.050Z",
+        "id": 1
+      }
+    ],
     "inventory": [],
-    "inventoryproduct": [],
-    "inventorysede": [],
-    "inventoryuser": [],
-    "product": [],
-    "productprovider": [],
-    "productuser": [],
+    "inventoryproduct": [
+      {
+        "member": 1,
+        "employee": 1,
+        "createdAt": "2017-06-28T01:56:26.607Z",
+        "updatedAt": "2017-06-28T01:56:26.607Z",
+        "id": 1
+      }
+    ],
+    "inventorysede": [
+      {
+        "member": 1,
+        "employee": 1,
+        "createdAt": "2017-06-28T01:56:26.597Z",
+        "updatedAt": "2017-06-28T01:56:26.597Z",
+        "id": 1
+      }
+    ],
+    "inventoryuser": [
+      {
+        "employee": 2,
+        "member": 1,
+        "createdAt": "2017-06-28T01:56:26.590Z",
+        "updatedAt": "2017-06-28T01:56:26.590Z",
+        "id": 1
+      }
+    ],
+    "product": [
+      {
+        "name": "hjgjg",
+        "serial": "fghfh",
+        "model": "ghgh",
+        "brand": "kjkjkj",
+        "createdAt": "2017-06-28T01:54:44.386Z",
+        "updatedAt": "2017-06-28T01:54:44.392Z",
+        "id": 1
+      },
+      {
+        "name": "Laptop",
+        "serial": "A85b3",
+        "model": "Aero16",
+        "brand": "DELL",
+        "createdAt": "2017-06-28T14:22:52.897Z",
+        "updatedAt": "2017-06-28T14:22:52.909Z",
+        "id": 2
+      }
+    ],
+    "productprovider": [
+      {
+        "employee": 1,
+        "member": 1,
+        "createdAt": "2017-06-28T01:54:44.413Z",
+        "updatedAt": "2017-06-28T01:54:44.413Z",
+        "id": 1
+      },
+      {
+        "employee": 5,
+        "member": 2,
+        "createdAt": "2017-06-28T14:22:52.929Z",
+        "updatedAt": "2017-06-28T14:22:52.929Z",
+        "id": 2
+      }
+    ],
+    "productuser": [
+      {
+        "employee": 2,
+        "member": 1,
+        "createdAt": "2017-06-28T01:54:44.402Z",
+        "updatedAt": "2017-06-28T01:54:44.402Z",
+        "id": 1
+      },
+      {
+        "employee": 2,
+        "member": 2,
+        "createdAt": "2017-06-28T14:22:52.921Z",
+        "updatedAt": "2017-06-28T14:22:52.921Z",
+        "id": 2
+      }
+    ],
     "provider": [
       {
         "name": "J&A System C.A",
@@ -136,12 +232,6 @@
         "id": 1
       },
       {
-        "name": "Paraparal",
-        "createdAt": "2017-06-25T19:32:11.243Z",
-        "updatedAt": "2017-06-25T19:32:11.258Z",
-        "id": 2
-      },
-      {
         "name": "Apamates Nepe",
         "createdAt": "2017-06-25T19:32:11.246Z",
         "updatedAt": "2017-06-25T19:32:11.261Z",
@@ -154,8 +244,24 @@
         "id": 4
       }
     ],
-    "ticket": [],
-    "ticketuser": [],
+    "ticket": [
+      {
+        "title": "kjjkjk",
+        "content": "kjkk",
+        "createdAt": "2017-06-28T01:54:11.569Z",
+        "updatedAt": "2017-06-28T01:54:11.586Z",
+        "id": 1
+      }
+    ],
+    "ticketuser": [
+      {
+        "employee": 2,
+        "member": 1,
+        "createdAt": "2017-06-28T01:54:11.601Z",
+        "updatedAt": "2017-06-28T01:54:11.601Z",
+        "id": 1
+      }
+    ],
     "user": [
       {
         "name": "Daniel",
@@ -178,7 +284,7 @@
         "avatar": "Daniel",
         "typeMember": "Gestor",
         "createdAt": "2017-06-25T19:32:10.957Z",
-        "updatedAt": "2017-06-25T19:32:10.957Z",
+        "updatedAt": "2017-06-28T02:23:02.619Z",
         "id": 2
       },
       {
@@ -190,7 +296,7 @@
         "avatar": "Daniel",
         "typeMember": "Gestor",
         "createdAt": "2017-06-25T19:32:10.960Z",
-        "updatedAt": "2017-06-25T19:32:10.960Z",
+        "updatedAt": "2017-06-28T02:22:53.681Z",
         "id": 3
       },
       {
@@ -215,25 +321,25 @@
         "id": 1
       },
       {
-        "employee": 2,
-        "member": 2,
-        "createdAt": "2017-06-25T19:32:11.163Z",
-        "updatedAt": "2017-06-25T19:32:11.163Z",
-        "id": 2
-      },
-      {
-        "employee": 3,
-        "member": 3,
-        "createdAt": "2017-06-25T19:32:11.176Z",
-        "updatedAt": "2017-06-25T19:32:11.176Z",
-        "id": 3
-      },
-      {
         "employee": 4,
         "member": 4,
         "createdAt": "2017-06-25T19:32:11.181Z",
         "updatedAt": "2017-06-25T19:32:11.181Z",
         "id": 4
+      },
+      {
+        "member": 3,
+        "employee": 3,
+        "createdAt": "2017-06-28T02:22:53.692Z",
+        "updatedAt": "2017-06-28T02:22:53.692Z",
+        "id": 5
+      },
+      {
+        "member": 2,
+        "employee": 2,
+        "createdAt": "2017-06-28T02:23:02.628Z",
+        "updatedAt": "2017-06-28T02:23:02.628Z",
+        "id": 7
       }
     ],
     "usersede": [
@@ -245,25 +351,25 @@
         "id": 1
       },
       {
-        "employee": 2,
-        "member": 2,
-        "createdAt": "2017-06-25T19:32:11.275Z",
-        "updatedAt": "2017-06-25T19:32:11.275Z",
-        "id": 2
-      },
-      {
-        "employee": 3,
-        "member": 3,
-        "createdAt": "2017-06-25T19:32:11.279Z",
-        "updatedAt": "2017-06-25T19:32:11.279Z",
-        "id": 3
-      },
-      {
         "employee": 4,
         "member": 4,
         "createdAt": "2017-06-25T19:32:11.281Z",
         "updatedAt": "2017-06-25T19:32:11.281Z",
         "id": 4
+      },
+      {
+        "member": 3,
+        "employee": 3,
+        "createdAt": "2017-06-28T02:22:53.701Z",
+        "updatedAt": "2017-06-28T02:22:53.701Z",
+        "id": 5
+      },
+      {
+        "member": 1,
+        "employee": 2,
+        "createdAt": "2017-06-28T02:23:02.638Z",
+        "updatedAt": "2017-06-28T02:23:02.638Z",
+        "id": 7
       }
     ]
   },
@@ -704,32 +810,56 @@
     "departament": {
       "id": 13
     },
-    "incidence": {},
-    "incidenceinventory": {},
-    "incidenceuser": {},
-    "inventory": {},
-    "inventoryproduct": {},
-    "inventorysede": {},
-    "inventoryuser": {},
-    "product": {},
-    "productprovider": {},
-    "productuser": {},
+    "incidence": {
+      "id": 1
+    },
+    "incidenceinventory": {
+      "id": 1
+    },
+    "incidenceuser": {
+      "id": 1
+    },
+    "inventory": {
+      "id": 1
+    },
+    "inventoryproduct": {
+      "id": 1
+    },
+    "inventorysede": {
+      "id": 1
+    },
+    "inventoryuser": {
+      "id": 1
+    },
+    "product": {
+      "id": 2
+    },
+    "productprovider": {
+      "id": 2
+    },
+    "productuser": {
+      "id": 2
+    },
     "provider": {
       "id": 6
     },
     "sede": {
       "id": 4
     },
-    "ticket": {},
-    "ticketuser": {},
+    "ticket": {
+      "id": 1
+    },
+    "ticketuser": {
+      "id": 1
+    },
     "user": {
       "id": 4
     },
     "userdepartament": {
-      "id": 4
+      "id": 7
     },
     "usersede": {
-      "id": 4
+      "id": 7
     }
   }
 }

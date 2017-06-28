@@ -26,6 +26,7 @@
     "sails": "^0.12.13",
     "sails-disk": "~0.10.9",
     "sails-hook-autoreload": "^0.13.1",
+    "sails-mysql": "^0.11.5",
     "sails-sqlserver": "^0.10.8"
   },
   "scripts": {

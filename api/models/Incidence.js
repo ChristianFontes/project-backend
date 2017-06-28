@@ -12,6 +12,10 @@ module.exports = {
       type: 'text',
       required: true
     },
+    state: {
+      type: 'string',
+      enum: ['abierto', 'cerrado']
+    },
     inventory: {
       collection: 'inventory',
       via: 'member',
@@ -26,6 +30,6 @@ module.exports = {
     }
   },
   seedData:[
-    
+
   ]
 };
