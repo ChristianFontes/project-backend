@@ -9,12 +9,12 @@ module.exports = {
 
   attributes: {
     status: {
-      type: 'text',
-      required: true
+      type: 'text'
     },
     state: {
       type: 'string',
-      enum: ['abierto', 'cerrado']
+      enum: ['Abierto', 'Cerrado', 'En proceso', 'Activo', 'Inactivo'],
+      required: true
     },
     inventory: {
       collection: 'inventory',
@@ -27,7 +27,13 @@ module.exports = {
       via: 'manager',
       through: 'incidenceuser', //userproject
       dominant: true
-    }
+    },
+    ticket: {
+      collection: 'Ticket',
+      via: 'member',
+      through: 'incidenceticket',
+      dominant: true
+    },
   },
   seedData:[
 

@@ -10,7 +10,8 @@ module.exports = {
   attributes: {
     serial: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
     name: {
       type: 'string',

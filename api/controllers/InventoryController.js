@@ -6,14 +6,24 @@
  */
 
 module.exports = {
-	sum: function (req, res) {
+	listinventories: function (req, res) {
 		Sede.find()
-    .exec(function (err, sedes) {
-        if (err){
+		.populate('inventory')
+		.exec(function (err, result) {
+				if (err){
 					return res.badRequest({ error: 'Error en la consulta' });
 				}else{
-					return res.json(sedes);
+					let array = [];
+					for (var i = 0; i < result.length; i++) {
+						let inventory = result[i].inventory;
+						if (inventory.length > 0) {
+							result[i]['quantity'] = inventory.length;
+							array.push(result[i]);
+
+						}
+					}
+					return res.json(array);
 				}
-    });
+		});
 	}
 };

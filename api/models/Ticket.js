@@ -22,12 +22,17 @@ module.exports = {
       through: 'ticketuser', //userproject
       dominant: true
     },
+    incidences: {
+      collection: 'Incidence',
+      via: 'ticket', //project
+      through: 'incidenceticket' //userproject
+    },
   },
   afterCreate: function(obj, next) {
       sails.io.sockets.emit('new ticket', obj);
       next();
   },
   seedData:[
-      
+
     ]
 };

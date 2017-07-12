@@ -9,12 +9,7 @@ module.exports = {
 
   attributes: {
     observations: {
-      type: 'text',
-      required: true
-    },
-    quantity: {
-      type: 'text',
-      required: true
+      type: 'text'
     },
     user: {
       collection: 'User',
@@ -41,6 +36,6 @@ module.exports = {
     }
   },
   seedData:[
-      
+
     ]
 };

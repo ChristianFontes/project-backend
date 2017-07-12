@@ -1,10 +1,11 @@
 /**
- * IncidenceController
+ * IncidenceTicketController
  *
- * @description :: Server-side logic for managing Incidences
+ * @description :: Server-side logic for managing Incidencetickets
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
 module.exports = {
 	
 };
+

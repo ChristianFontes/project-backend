@@ -47,6 +47,10 @@ module.exports.routes = {
   ***************************************************************************/
   'post /login' : 'UserController.login',
   'get /records' : 'TicketUserController.records',
-  'get /sum' : 'InventoryController.sum'
-
+  'get /listinventories' : 'InventoryController.listinventories',
+  'post /serialproduct' : 'ProductController.serialproduct',
+  'get /groupbynameproduct' : 'ProductController.groupbynameproduct',
+  'get /groupbymodelproduct' : 'ProductController.groupbymodelproduct',
+  'get /groupbybrandproduct' : 'ProductController.groupbybrandproduct',
+  'get /ticketincidence' : 'TicketController.ticketincidence',
 };
